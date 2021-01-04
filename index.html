@@ -7,43 +7,36 @@
     <title>Jogo de Toto</title>
 </head>
 <body>
-    
-    <header><h1>TOTO</h1></header>
-
-    <div class="container">
+    <div id="container">
 
         <div id="startScreen">
             <div id="Title"> TOTO </div>
-            <button id="play" onclick="int()">JOGAR</button>
+            <button id="play" onclick="init()">JOGAR</button>
             <br><br><br>
             
             <img src="img/painel.png" height="100" width="150" id="help" >
             <br>
             <span id="instructions">(USAR AS SETAS PARA JOGAR)</span>
-            <div id="foot">JOGO FEITO EM JAVASCRIPT, HTML5 e CSS3 <br><br> por: Lucrécio e Hugo 2020 <br></div>
+            <div id="foot">JOGO FEITO EM JAVASCRIPT, HTML5 e CSS3 <br><br> por: Lucrécio e Hugo 2021 <br></div>
         </div>
 
         <div id="gameOverScreen">
             <div id="Title"> TOTO </div>
-            <button id="playAgain" onclick="int()"> JOGAR NOVAMENTE </button>
+            <button id="playAgain" onclick="init()"> JOGAR NOVAMENTE </button>
             <br><br><br>
         </div>
         <canvas id="myCanvas" width="480" height="720">
         <div id="score">
             <div id="timer">
                 MINUTOS:
-                <div id="counDown">2:00</div>
+                <div id="countDown">2:00</div>
             </div>
             <h3 id="blues">Chelsea</h3>
             <div id="away">0</div>
-
             <h3 id="reds">Liverpool</h3>
             <div id="home">0</div>
             <div id="status"></div>
-            <div id="credits">Criado por Lucrécio e Hugo</div>
-
-
-
+            <div id="credits">Criado por Lucrécio e Hugo 2021 </div>
         </div>
     </div>
 </body>
